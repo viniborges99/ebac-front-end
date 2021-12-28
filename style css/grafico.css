@@ -1,0 +1,64 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6em;
+    color: #333;
+}
+footer{
+    font-size: 1.6rem;
+}
+
+
+div{
+    margin: 40px auto;
+}
+
+/*cria um circulo*/
+#grafico-01 {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+   
+}
+#grafico-01 img{
+    width: 100%;
+}
+/*cria um triangulo*/
+#grafico-02{
+    border-style: solid;
+    border-width: 60px 0px 60px 120px;
+    border-color: transparent transparent transparent blue;
+    width: 60px;  
+}
+#imagem-vetorial{
+    width: 200px;
+    
+}
+#canvas{
+    width: 300px;
+    height: 300px;
+}
+#grafico-01{
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.425));
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.filtro{
+    filter: grayscale(100%);/*escala de cinza*/
+    filter: blur(5px);/*desfoque*/
+    filter: brightness(150%);/*brilho*/
+    filter: invert(100%);/*iverte as cores*/
+    filter: opacity(50%);/*opacidade fica mais branco*/
+    filter: saturate(205%);/*aumenta a intensidade das cores*/
+    filter: grayscale(100%);
+}
+.filtro:hover{
+    filter: grayscale(0);
+    filter: saturate(205%);
+   
+}

@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Style the header */
+  header  {
+    width: 100%;
+    margin: auto;
+    background-color: #66666671;
+    height: 150px;
+  }
+ header h1{
+    text-align: center;
+    color: white;  
+    font-size: 4rem;
+    padding-top: 20px;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.541);
+  }
+nav{
+  width: 100%;
+  margin-top: 27px; 
+  padding-left: 20px;    
+    
+}
+nav a {
+  width: 100%;
+  margin: auto;
+  text-decoration: none;
+  padding-left: 3px;
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+    
+}
+nav a:hover{
+    background-color: black;
+    color: white;
+    padding: 5px 7px 0 5px;
+    border-radius: 5px;
+}
+section{
+    width: 100%;
+    background-color: #a0512d;
+    margin: auto; 
+}
+article h1,.p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+}
+#formulario{
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  border-radius: 10px 10px 0 0 ;
+
+}
+
+.nome,.email,.msg{
+  padding: 20px 0 10px 50px;
+  text-align: justify;
+  font-weight: 600;
+  margin: auto;
+  width: 100%;
+
+}
+#email,#mensagem,#nome{
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.534);
+  outline: none;
+  padding: 2px;
+  border:ridge;
+
+}
+.perguntas {
+  padding: 20px 0 5px 50px;
+  word-spacing: 2px;
+
+}
+.perguntas > input{
+  cursor: pointer;
+  margin-top: 10px;
+}
+.cor{
+  word-spacing: 2px;
+  outline: none;
+  cursor: pointer;
+}
+footer{
+  padding: 25px;
+  text-align: center;
+  background-color: #66666671;
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.541);
+}
+@media(max-width:600px){
+  nav a{
+    float: left;
+    padding-top: 30px;
+  }
+   .p{
+    font-size: 1rem;
+    text-indent: 50px;
+    margin-left: -50px;
+  }
+  #formulario{
+    float: left;
+    
+  }
+  footer{
+    width: 100%;
+    float: left;
+  }
+}
+
+
+
+
+
+
+  /* Create two columns/boxes that floats next to each other */
+ 
+  /* Style the list inside the menu */
+
+
+ /* article {
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+  }
+
+  /* Clear floats after the columns 
+  section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the footer 
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens 
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }*/

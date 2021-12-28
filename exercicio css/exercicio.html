@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Exercicio CSS</title>
+</head>
+
+<body>
+
+	<header>
+		<h2>Curso Front-end - HTML</h2>
+		<nav class="menu">
+			<a href="#">Contato</a>
+			<a href="#">Sobre</a>
+			<a href="#">Layouts</a>
+		</nav>
+	</header>
+
+
+	<section>
+		<article>
+			<h1>Contato</h1>
+			<p class="p">Preencha os campos abaixo</p>
+
+			<form id="formulario" method="post">
+				<div class="nome">
+					<label for="nome">Nome</label><br>
+					<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+				</div>
+				<div class="email">
+					<label for="email">E-mail</label><br>
+					<input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+				</div>
+				<div class="msg">
+					<label for="mensagem">Mensagem</label><br>
+					<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+				</div>
+				<div>
+					<P class="perguntas">
+						<label for="">Qual a linguagem voce mais  prefere?</label><br>
+						<input type="radio" name="linguagens" value="html"> HTML
+						<input type="radio" name="linguagens" value="css"> CSS
+						<input type="radio" name="linguagens" value="javascript"> JAVASCRIPT
+					</P>
+				</div>
+				<div>
+					<P class="perguntas">
+						<label for="">Quais linguagens voce sabe?</label><br>
+						<input type="checkbox" name="linguagens" value="html"> HTML
+						<input type="checkbox" name="linguagens" value="css"> CSS
+						<input type="checkbox" name="linguagens" value="javascript"> JAVASCRIPT
+						<input type="checkbox" name="linguagens" value="Nenhuma"> Nenhuma
+					</P>
+				</div>
+				<div class="perguntas">
+					<label>Qual a sua cor preferida?</label>
+					<select class="cor">
+						<option value="azul" selected>Azul</option>
+						<option value="vermelho">Vermelho</option>
+						<option value="verde">Verde</option>
+					</select>
+				</div>
+				<div class="perguntas">
+					<input type="submit">
+				</div>
+			</form>
+		</article>
+	</section>
+
+	<footer>
+		<p>Desenvolvido por Vinicius</p>
+	</footer>
+
+</body>
+
+</html>

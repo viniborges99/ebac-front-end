@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>HTML - Layouts</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		header {
+			width: 100%;
+			margin: auto;
+			background-color: #66666671;
+			height: 150px;
+		}
+
+		header h1 {
+			text-align: center;
+			color: white;
+			font-size: 4rem;
+			padding-top: 20px;
+			text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.541);
+		}
+
+		nav {
+			width: 100%;
+			margin-top: 27px;
+			padding-left: 20px;
+
+		}
+
+		nav a {
+			width: 100%;
+			margin: auto;
+			text-decoration: none;
+			padding-left: 3px;
+			color: black;
+			font-size: 18px;
+			font-weight: bolder;
+
+		}
+
+		nav a:hover {
+			background-color: black;
+			color: white;
+			padding: 5px 7px 0 5px;
+			border-radius: 5px;
+		}
+
+		article {
+			margin: auto;
+			padding: 20px;
+			width: 80%;
+			background-color: #a0512d;
+			text-align: justify;
+		}
+
+		h1 {
+			text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.541);
+		}
+
+		h2 {
+			padding: 10px 0;
+		}
+
+		/* Clear floats after the columns */
+		section::after {
+			background: #ccc;
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Style the footer */
+		footer {
+			padding: 25px;
+			text-align: center;
+			background-color: #66666671;
+			color: white;
+			font-size: 1.5em;
+			text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.541);
+		}
+
+		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+		@media (max-width: 600px) {
+
+			nav,
+			article {
+				width: 100%;
+				height: auto;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Tecnofront</h1>
+		<nav class="menu">
+			<a href="exercicio.html">Home</a>
+			<a href="empresa.html">Empresa</a>
+			<a href="contato.html">Contato</a>
+			<a href="tabelaex.html">Finanças</a>
+		</nav>
+	</header>
+
+	<section>
+		<article>
+
+			<h2>Trajetória</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id nibh posuere, eleifend lacus quis,
+				blandit mauris. Proin eu gravida justo. Donec a mi laoreet, malesuada est a, imperdiet leo. Fusce in
+				mauris dapibus, cursus purus vitae, pulvinar ligula. Donec nec mi mollis, viverra purus et, faucibus
+				ante. Fusce faucibus pretium eros, vitae condimentum orci dapibus eu. Morbi elit nibh, pulvinar ut
+				laoreet sit amet, dignissim id lectus. Nunc ac felis posuere, interdum eros vitae, sodales eros. Aenean
+				porta vehicula diam, sit amet venenatis ante eleifend in. Integer malesuada urna nunc, dapibus dapibus
+				felis malesuada et. Ut id tempor dolor, ac imperdiet lorem. Orci varius natoque penatibus et magnis dis
+				parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Pellentesque risus quam, mollis in tellus quis, blandit venenatis nunc.</p>
+			<h2>Visão</h2>
+
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sit
+				amet ullamcorper odio. Etiam dignissim arcu vel porta dictum. Proin vel maximus justo, quis rutrum
+				lectus. Nullam pellentesque id enim quis imperdiet. Aenean condimentum ultricies ex vitae auctor. Proin
+				condimentum congue felis, nec aliquet erat tempus ut. Phasellus quis molestie nulla, tincidunt finibus
+				tortor. Aliquam nulla erat, tristique at pharetra eget, vestibulum a diam. Maecenas aliquet porta elit
+				et pretium. In sed ante nibh. Nulla facilisi. Curabitur finibus gravida lacus, eu vestibulum ex. Morbi
+				nec suscipit felis.</p>
+			<h2>Objetivo</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit libero cupiditate aperiam,
+				cum eligendi excepturi sunt quia. Natus vel unde quaerat eius minima ducimus reprehenderit minus commodi
+				id. Nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quae, enim repellat vero
+				earum voluptates voluptatum ratione, ducimus, in facilis eveniet doloribus accusamus ipsa omnis quas
+				quisquam cum alias. Assumenda.</p>
+
+		</article>
+
+
+	</section>
+
+	<footer>
+		<p>Desenvolvido por Vinicius</p>
+	</footer>
+
+</body>
+
+</html>
