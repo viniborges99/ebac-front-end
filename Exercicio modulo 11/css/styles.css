@@ -81,6 +81,7 @@ img {
 }
 .logo{
     padding:10px 0 10px 20px;
+    cursor: pointer;
 }
 
 #tenho-interesse {
@@ -132,6 +133,7 @@ section nav {
     display: block;
     float: left;
     width: 30%;
+    cursor: pointer;
 }
 nav ul{
     padding: 10px 50px 0 10px;
