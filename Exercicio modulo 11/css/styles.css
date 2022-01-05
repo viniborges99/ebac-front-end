@@ -208,6 +208,6 @@ footer small {
     #tenho-interesse >.container{
         margin: auto;
         width: 100% !important;
-        padding-left: 0;
+        padding: 0;
     }
 }
