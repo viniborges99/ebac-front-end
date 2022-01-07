@@ -190,6 +190,16 @@ footer small {
     overflow: hidden !important;
 
 }
+@media (max-width:768px){
+    #saiba-mais a {
+        margin: 0 0 0 20px;
+    }
+    #saiba-mais p,
+    #saiba-mais img{
+        width: 44% !important;
+    }
+
+}
 
 @media (max-width: 425px) {
     section nav,
@@ -221,7 +231,8 @@ footer small {
     }
     #saiba-mais p, 
     #saiba-mais img{
-        margin: 0 0 0 50px;
+        margin: 0;
+        width: 88% !important;
         
     }
     #saiba-mais a{
