@@ -190,56 +190,6 @@ footer small {
     overflow: hidden !important;
 
 }
-@media (max-width:768px){
-    #saiba-mais a {
-        margin: 0 0 0 20px;
-    }
-    #saiba-mais p,
-    #saiba-mais img{
-        width: 44% !important;
-    }
-
-}
-
-@media (max-width: 425px) {
-    section nav,
-    section article, footer, .cognito, #tenho-interesse{
-        width: 100%;
-        margin: auto;
-    }  
-
-    .container {
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-    nav ul{
-        padding: 0;
-        margin: 0 auto;
-    }
-    #tenho-interesse >.container{
-        margin: auto;
-        width: 100% !important;
-        padding: 0;
-    }
-    .legenda{
-       float: right; 
-       margin-top: -20px; 
-    }
-    .legenda  h4,
-    .legenda h5{
-        text-align: center;
-    }
-    #saiba-mais p, 
-    #saiba-mais img{
-        margin: 0;
-        width: 88% !important;
-        
-    }
-    #saiba-mais a{
-        margin-left: 50px;
-    }
-
-}
 #banner{
     background-image: url(../prontocloud/images/banner.png) ;
     background-repeat: no-repeat;
@@ -327,4 +277,58 @@ dd{
     margin-bottom: 20px;
     font-size: 1.4rem;
 }
+@media (max-width:768px){
+    #saiba-mais a {
+        margin: 0 0 0 20px;
+    }
+    #saiba-mais p,
+    #saiba-mais img{
+        width: 44% !important;
+    }
+
+}
+
+@media (max-width: 425px) {
+    section nav,
+    section article, footer, .cognito, #tenho-interesse{
+        width: 100%;
+        margin: auto;
+    }  
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    nav ul{
+        padding: 0;
+        margin: 0 auto;
+    }
+    #tenho-interesse >.container{
+        margin: auto;
+        width: 100% !important;
+        padding: 0;
+    }
+    .legenda{
+       float: right; 
+       margin-top: -20px; 
+    }
+    .legenda, .buttom-cta {
+        text-align: center;
+    }
+    .legenda  h4,
+    .legenda h5{
+        text-align: center;
+    }
+    #saiba-mais p, 
+    #saiba-mais img{
+        margin: 0;
+        width: 88% !important;
+        
+    }
+    #saiba-mais a{
+        margin-left: 50px;  
+    }
+
+}
+
 
