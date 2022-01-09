@@ -311,8 +311,9 @@ dd{
     .legenda{
        float: right; 
        margin-top: -20px; 
+       margin-right: -20px;
     }
-    .legenda, .buttom-cta {
+    .legenda-conteiner, .buttom-cta {
         text-align: center;
     }
     .legenda  h4,
