@@ -310,11 +310,12 @@ dd{
     }
     .legenda{
        float: right; 
-       margin-top: -20px; 
+       margin-top: 25px; 
        margin-right: -20px;
     }
     .legenda-conteiner, .buttom-cta {
         text-align: center;
+        margin-top: -20px;
     }
     .legenda  h4,
     .legenda h5{
