@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Exercicios</h2>
+    <ul>
+        <li>10 + 15 = (25, type: number)</li>
+        <li>"10" + 2 = (102, type: string )</li>
+        <li>"10" * 2 = (20, type: number)</li>
+        <li>"10" % 3 = ( 1, type: number)</li>
+        <li>10 + true = (11, type: number)</li>
+        <li>10 == "10" = (true, type: boolean)</li>
+        <li>10 === "10" = (false, type: boolean)</li>
+        <li>10 < 11 = (true, type: numer)</li>
+        <li>10 > 12 = (false, type: number)</li>
+        <li>10 <= 9.99 = (false, type: float )</li>
+        <li>10 != "dez" = (false, type: boolean )</li>
+        <li>10 + true = (11, type: number)</li>
+        <li>10 <= 10.1 =(true, type: boolean)</li>
+        <li>"dez" + true = (deztrue, string)</li>
+        <li>10 + false = (10, numer)</li>
+        <li>10 * false = (0, number)</li>
+        <li>true + true = (2 , boolean)</li>
+        <li>10 ++ = (11 , number)</li>
+        <li>10 -- = (p, number)</li>
+        <li>1 & 1 = (1, number)</li>
+        <li>1 & 0 = (0, number)</li>
+        <li>0 & 0 = (0, numeber)</li>
+        <li>0 / 1= (0, number)</li>
+        <li>5 + 5 == 10 = (true,boolean)</li>
+        <li>"5" + "5" == 10 = (false, boolean)</li>
+        <li>"5" * 2 > 9 = (true, boolean)</li>
+        <li>(10 + 10) * 2 = (40, number)</li>
+        <li>10 + 10 * 2 = (30, number)</li>
+
+    </ul>
+    <h2>Exercicio 2</h2>
+    <h4>Variaveis</h4>
+    <ol>
+        <li>var branco = "preto"</li>
+        <li>var preto = "cinza"</li>
+        <li>var cinza = "branco"</li>
+        <li> var carro = "preto"</li>
+        <li>var valor= 3000</li>
+        <li>var prestacao = 750</li>
+        <li>var valorcarro = valor / valor</li>
+        <li>var parcelacarro = valor / prestacao</li>
+        <li>var stri = "preto" + "preto" + "branco" + "cinza"</li>
+        <li>var cavalo = carro =="preto" ? "cinza" : "marron"</li>
+       
+    </ol>
+    <h3>Questões</h3>
+    <ol>
+        <li>branco == "branco" <p>resposta: false</p></li>
+        <p>EXPLICAÇÃO: O branco nao e igual ao "branco" pois ele tem a cor "preta" atribuida a sua variavel.</p>
+
+        <li> Branco == cinza <p>resposta: false</p></li>
+        <p>EXPLICAÇÃO: O branco nao e igual ao cinza pois o branco tem a  cor "preta" atribuida a sua variavel e o cinza tem a cor "branca" atribuida a sua variavel.</p>
+
+        <li> carro === branco <p>resposta: True</p></li>
+        <p>EXPLICAÇÃO: A resposta está correta pois a variavel carro tem a cor "preta" atribuida que a mesma cor da variavel branco</p>
+
+        <li> var cavalo = carro == "preto" ? "cinza" : "marron" <p id="corcarro">resposta: carro cinza</p></li>
+        <p>EXPLICAÇÃO: A variavel cavalo recebe carro se o carro for preto ele recebe a cor cinza se não, se o carro nao for preto ele recebe marron. (podemos saber a cor do carro atraves da variavel carro citada a cima)</p>
+
+        <li> Quantas prestações são necessarias para pagar o valor do carro com uma entrada de 3.000? <p id="resultado"> </p></li>
+
+        <li> Quantas prestações são necessarias para pagar o valor do carro?<p id="parcela"></p></li>
+
+        <li>Somando as variaveis de cores é formada uma string de quanatos caracteres?<p>Resposta: São formado por 21 caracteres </p></li>
+
+    </ol>
+
+</body>
+<script>
+    var branco = "preto"
+    var preto = "cinza"
+    var cinza = "branco"
+    var carro = "preto"
+    var valor= 3000
+    var prestacao = 750
+    var valorcarro = valor / valor
+    var parcelacarro = valor / prestacao
+    var stri = "preto" + "preto" + "branco" + "cinza"
+    var cavalo = carro =="preto" ? "cinza" : "marron"
+
+    document.getElementById("corcarro").innerHTML = (`A cor do Carro é ${cavalo} `);
+    
+   document.getElementById("resultado").innerHTML = (`São necessarias ${valorcarro} parcela (Operação: var valorfinal = valor / valor) `);
+
+   document.getElementById("parcela").innerHTML = (`São necessarias ${parcelacarro} parcela (Operação: var parcelacarro = valor / prestacao) `);
+</script>
+</html>
