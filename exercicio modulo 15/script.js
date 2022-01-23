@@ -157,7 +157,7 @@ function validauf(elemento){
 
         let estado = document.getElementsByClassName('uf')
 
-        if(estado == "" ||  estado.length >2){
+        if(estado == "" ||  estado.length >2 || estado != ufvalida.length){
             document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
