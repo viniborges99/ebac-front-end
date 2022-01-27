@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-cod/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img id="logo" src="images/logo.jpg" alt="logo da marca" class="img-fluid">
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active " href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2 class="sobre">Sobre nós</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quod obcaecati laborum dicta
+                        asperiores beatae praesentium neque nemo, iste, sunt sint nobis ab sit impedit itaque non
+                        tempora quam. Impedit!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quod obcaecati laborum dicta
+                        asperiores beatae praesentium neque nemo, iste, sunt sint nobis ab sit impedit itaque non
+                        tempora quam. Impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vel quod
+                        officiis assumenda cupiditate, deleniti magnam ipsa, explicabo pariatur in consequatur dolore
+                        autem incidunt consectetur? Labore veritatis nesciunt cum quo. Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Saepe recusandae fuga, atque quos magni in placeat consequuntur
+                        qui possimus inventore ut. Laborum.</p>
+
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <!--ele tera 4 unidades de largura na media e largura total no smartphone-->
+                    <img id="destaque" src="images/sport.jpg" alt="imagem de tecnologia" class="img-fluid ">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="produtos">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col">
+                    <h2 class="mercadoria">Produtos</h2>
+
+                    <div class="card">
+                        <img src="images/nike caramelo.jpg" alt="imagem de tecnologia" class="img-fluid ">
+                        <div class="card-body">
+                            <h5 class="card-title">Tênis Nike Revolution 6 Masculino </h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/adidas-gb9041c3a1_640.jpg" alt="imagem de tecnologia" class="img-fluid ">
+                        <div class="card-body">
+                            <h5 class="card-title">Tênis Adidas Coreracer Masculino</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                            <a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver
+                                produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/nike laranja.jpg" alt="imagem de tecnologia" class="img-fluid ">
+                        <div class="card-body">
+                            <h5 class="card-title">Tênis Nike downshifter Feminino</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                            <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Ou está com alguma duvida? Preencha os campos do formulário para receber uma resposta.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="Digite seu email">
+                        </div>
+                        <div class="input-group">
+                            <textarea class="form-control" placeholder="Alguma duvida?" name="" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-success">Solicitar cotação</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Tênis Nike Revolution 6 Masculino</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho Disponivel</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>N:38</td>
+                                <td>R$ 100</td>
+
+                            </tr>
+                            <tr>
+                                <td>N:40</td>
+                                <td>R$ 200</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>N:42</td>
+                                <td>R$ 300</td>
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Tênis Adidas Coreracer Masculino</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho Disponivel</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>N:36</td>
+                                <td>R$ 100</td>
+
+                            </tr>
+                            <tr>
+                                <td>N:40</td>
+                                <td>R$ 150</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>N:42</td>
+                                <td>R$ 180</td>
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Tênis Nike downshifter Feminino</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho Disponivel</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>N:36</td>
+                                <td>R$ 100</td>
+
+                            </tr>
+                            <tr>
+                                <td>N:40</td>
+                                <td>R$ 150</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>N:42</td>
+                                <td>R$ 180</td>
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap-cod/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
