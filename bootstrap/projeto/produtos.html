@@ -15,17 +15,18 @@
 
 <body>
 
-    <header><!-- menu de link-->
+    <header>
+        <!-- menu de link-->
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img id="logo" src="images/logo.jpg" alt="logo da marca" class="img-fluid">
+                    <a href="index.html"><img id="logo" src="images/logo.jpg" alt="logo da marca" class="img-fluid"></a>
                 </div>
                 <div class="col">
                     <ul class="nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link active " href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active " href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos.html">Produtos</a></li>
                         <li class="nav-item"><a class="nav-link" href="cadastro.html">Contato</a></li>
 
                     </ul>
@@ -34,87 +35,24 @@
         </div>
     </header>
 
-    <section id="sobre">
+    <section id="produtos"><!--produtos-->
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
-                    <h2 class="sobre">Sobre nós</h2>
-                    <!--sobre a empresa-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quod obcaecati laborum dicta
-                        asperiores beatae praesentium neque nemo, iste, sunt sint nobis ab sit impedit itaque non
-                        tempora quam. Impedit!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quod obcaecati laborum dicta
-                        asperiores beatae praesentium neque nemo, iste, sunt sint nobis ab sit impedit itaque non
-                        tempora quam. Impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vel quod
-                        officiis assumenda cupiditate, deleniti magnam ipsa, explicabo pariatur in consequatur dolore
-                        autem incidunt consectetur? Labore veritatis nesciunt cum quo. Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit. Saepe recusandae fuga, atque quos magni in placeat consequuntur
-                        qui possimus inventore ut. Laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde provident aperiam ab velit nostrum aut molestias, voluptas veritatis similique fugiat? Necessitatibus fugiat reprehenderit minima magni numquam inventore nisi dolores nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nobis aliquam tenetur dignissimos asperiores nam beatae molestias illum nostrum aperiam totam omnis exercitationem, alias, dolore perspiciatis libero repudiandae dolorum. Laboriosam!</p>
-
-                </div>
-                <div class="col-md-5 col-sm-12">
-                    <!--div de imagens de telão-->
-                    <!--ele tera 4 unidades de largura na media e largura total no smartphone-->
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="images/modelo-masculino.jpg"
-                                    class="d-block w-100" alt="Tênis Nike SB BLZR Court DVDL Unissex">
-                                <div class="carousel-caption d-none d-md-block">
-                                </div>
-
-                            </div>
-                            <div class="carousel-item" data-bs-interval="2000">
-                                <img src="images/modelo-feminino.jpg"
-                                    class="d-block w-100" alt="Tênis Nike SB BLZR Court DVDL Unissex">
-                                <div class="carousel-caption d-none d-md-block">
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/short-maculino.jpg"
-                                    class="d-block w-100" alt="Tênis Nike SB BLZR Court DVDL Unissex">
-                                <div class="carousel-caption d-none d-md-block">
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="produtos">
-
-        <div class="container">
-
-            <div class="row">
-
                 <div class="col">
                     <h2 class="mercadoria">Produtos</h2>
 
-                    <div class="card"><!--primeira imagem de produto-->
+                    <div class="card">
+                        <!--primeira imagem de produto-->
                         <img src="images/tenis-nike-sb-1.jpg" alt="imagem de tecnologia" class="img-fluid ">
                         <div class="card-body">
-                            <h5 class="card-title">Tênis Nike SB BLZR  Unissex </h5>
+                            <h5 class="card-title">Tênis Nike SB BLZR Unissex </h5>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
                             <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
                         </div>
                     </div>
 
-                    <div class="card"><!--segunda imagem de produto-->
+                    <div class="card">
+                        <!--segunda imagem de produto-->
                         <img src="images/tenis-1-nike-city-rep-tr-DA1352-002-1-11628869130.jpg"
                             alt="imagem de tecnologia" class="img-fluid ">
                         <div class="card-body">
@@ -125,7 +63,8 @@
                         </div>
                     </div>
 
-                    <div class="card"><!--terceira imagem de produto-->
+                    <div class="card">
+                        <!--terceira imagem de produto-->
                         <img src="images/tenis-nike-air-zoom-tempo-next-feminino-CI9924-800-1.jpg"
                             alt="imagem de tecnologia" class="img-fluid ">
                         <div class="card-body">
@@ -134,6 +73,7 @@
                             <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
                         </div>
                     </div>
+
 
                 </div>
             </div>
@@ -180,28 +120,49 @@
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="images/tenis-nike-sb-1.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/tenis-nike-sb-2.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/tenis-nike-sb-3.jpg" class="d-block w-100" alt="...">
-                          </div>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="images/tenis-nike-sb-1.jpg"
+                                    class="d-block w-100" alt="Tênis Nike SB BLZR Court DVDL Unissex">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="images/tenis-nike-sb-2.jpg"
+                                    class="d-block w-100" alt="Tênis Nike SB BLZR Court DVDL Unissex">
+                                <div class="carousel-caption d-none d-md-block">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tenis-nike-sb-3.jpg"
+                                    class="d-block w-100" alt="Tênis Nike SB BLZR Court DVDL Unissex">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
-                </div>
+                    </div>
                     <table class="table table-hover table-striped">
                         <thead>
                             <tr>
@@ -230,46 +191,54 @@
                         </tbody>
 
                     </table>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-                    </div>
                 </div>
-                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
 
-    
-    <div class="modal fade" id="modal-2"><!--primeiro modal de produto-->
+    <div class="modal fade" id="modal-2"><!--segundo modal de produto-->
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Tênis Nike SB BLZR Court DVDL Unissex</h5>
+                    <h5 class="modal-title">Tênis Nike City Rep TR Masculino</h5>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="images/tenis-nike-sb-1.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/tenis-1-nike-city-rep-tr-DA1352-002-1-11628869130.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/tenis-2-nike-city-rep-tr-DA1352-002-2-21628869131.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
                           </div>
                           <div class="carousel-item">
-                            <img src="images/tenis-nike-sb-2.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/tenis-nike-sb-3.jpg" class="d-block w-100" alt="...">
+                            <img src="images/tenis-3-nike-city-rep-tr-DA1352-002-5-51628869134.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
-                </div>
                     <table class="table table-hover table-striped">
                         <thead>
                             <tr>
@@ -298,11 +267,10 @@
                         </tbody>
 
                     </table>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
                 </div>
-                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
@@ -394,9 +362,14 @@
     </div>
 
 
-
     <script src="bootstrap-cod/js/bootstrap.bundle.min.js"></script>
-
+    <script>//quanto tempo as imagens vao ficar ate mudar para proxima
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000,
+            wrap: false
+        })
+    </script>
 </body>
 
 </html>
