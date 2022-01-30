@@ -155,9 +155,9 @@ function validauf(elemento){
         'PR','RJ','RN','RO','RR','RS','SC','SE',
         'SP','TO'];// criei esse array das siglas dos estados
 
-        let estado = document.getElementsByClassName('uf')
+        let estado = document.getElementById('uf').value
 
-        if(estado == "" ||  estado.length >2 || estado != ufvalida.length){
+        if(estado == "" ||  estado.length > 2 || estado != ufvalida){
             document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
@@ -169,10 +169,13 @@ function validauf(elemento){
             this.parentNode.classList.remove('erro');
 
         }
+        console.log(estado.value);
+        
 
     });
 
 }
+
 
 
 
