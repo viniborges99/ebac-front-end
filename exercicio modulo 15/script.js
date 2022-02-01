@@ -149,32 +149,47 @@ function validauf(elemento){
     elemento.addEventListener('focusout', function(event) {
 
         event.preventDefault();
-        //criar uma let chamando o id do input uf, para jogar dentro do if, se o id for diferente de ufvalida.lengh vai dar erro
-        let ufvalida = ['AC','AL','AM','AP','BA','CE','ES','GO',
-        'MA','MG','MS','MT','PA','PB','PE','PI',
-        'PR','RJ','RN','RO','RR','RS','SC','SE',
-        'SP','TO'];// criei esse array das siglas dos estados
+        
+        let ufvalida = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'ES', 'GO', 
+        'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 
+        'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE',
+        'SP', 'TO']; // criei esse array das siglas dos estados
+
+        
 
         let estado = document.getElementById('uf').value
 
-        if(estado == "" ||  estado.length > 2 || estado != ufvalida){
+        if(!Array.prototype.includes){
+            Object.defineProperty(Array.prototype,'includes',{
+                value: function(searchElement, fromIndex){
+                    if(estado == ""){
+                        document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+                        this.classList.add('erro');
+                        this.parentNode.classList.add('erro');
+
+                    }
+                }
+            })
+        }
+
+
+        if(estado == "" ||  estado.length > 2){
             document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
-            
         }else{
             document.querySelector('.mensagem').innerHTML = "";
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
 
         }
-        console.log(estado.value);
-        
+           
 
     });
 
 }
+
 
 
 
