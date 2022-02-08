@@ -159,21 +159,8 @@ function validauf(elemento){
 
         let estado = document.getElementById('uf').value
 
-        if(!Array.prototype.includes){
-            Object.defineProperty(Array.prototype,'includes',{
-                value: function(searchElement, fromIndex){
-                    if(estado == ""){
-                        document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
-                        this.classList.add('erro');
-                        this.parentNode.classList.add('erro');
 
-                    }
-                }
-            })
-        }
-
-
-        if(estado == "" ||  estado.length > 2){
+        if(estado == "" ||  (estado.length !== 2 && !ufvalida.includes(estado))){
             document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
@@ -189,10 +176,6 @@ function validauf(elemento){
     });
 
 }
-
-
-
-
 
 
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
