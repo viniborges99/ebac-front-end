@@ -52,6 +52,79 @@ input, textarea{
     
 }
 
+@media(max-width:991px){
+    .card {
+        width: 31%;
+        float: left;
+        margin: 7px;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 10px;
+    }
+    .nav-link{
+        margin-left: 8px;
+        padding-left: 4px;
+        width: 90px; 
+        text-align: center;  
+        text-indent: 5px;
+    }
+    .nav-item{
+        margin-left: -4px;
+    }
+
+}
+@media(max-width:768px){
+    .card {
+        width: 30%;
+        float: left;
+        margin: 8px;
+    }
+}
+@media(max-width:553px){
+    .card {
+        width: 100%;
+        float: left;
+        margin: 5px;
+    }
+    .form-contro{
+        position: relative;
+        column:
+        width: 100%;
+
+    }
+}
+@media(max-width:485px){
+    .card {
+        width: 100%;
+        float: left;
+        margin: 5px;
+    }
+}
+@media( max-width:425px){
+    .nav{
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 10px;
+    }
+    .nav-link{
+        margin-left: 8px;
+        padding-left: 4px;
+        width: 90px; 
+        text-align: center;  
+        text-indent: 3px;
+    }
+    .nav-item{
+        margin-left: -4px;
+    }
+    .card {
+        width: 100%;
+        float: left;
+        margin: 5px;
+    }
+}
+
 @media(max-width:320px){
     .card{
         width: 100%;
@@ -64,7 +137,9 @@ input, textarea{
     .nav-link{
         margin-left: 8px;
         padding-left: 4px;
-        width: 73px;   
+        width: 73px; 
+        text-align: center;  
+        text-indent: 3px;
     }
     .nav-item{
         margin-left: -4px;
