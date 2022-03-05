@@ -88,12 +88,6 @@ input, textarea{
         float: left;
         margin: 5px;
     }
-    .form-contro{
-        position: relative;
-        column:
-        width: 100%;
-
-    }
 }
 @media(max-width:485px){
     .card {
