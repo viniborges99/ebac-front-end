@@ -45,11 +45,39 @@ input, textarea{
 #destaque{
     border-radius: 5px;
 }
+.form-check{
+    margin-left: -22px;
+    margin-top: 15px;
+}
+#cadastre{
+    text-align: center;
+    font-size: 18px;
+}
 .mercadoria{
     text-align: center;
     font-size: 50px;
     font-weight: 700;
     
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 0.6rem ;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+
+}
+.sobre{
+    text-align: center;
+}
+.cadastro{
+    text-align: center;
+}
+.p-cadastro{
+    text-align: center;
+}
+@media(max-width:1199px){
+    .carousel-item{
+        margin-top: 100px;
+    }
 }
 
 @media(max-width:991px){
@@ -81,6 +109,18 @@ input, textarea{
         float: left;
         margin: 8px;
     }
+    .col-md-5{
+        width: 100%;
+
+    }
+    .col-md-7{
+        width: 100%;
+
+    }
+    #p-sobre{
+        text-align: justify;
+        
+    }
 }
 @media(max-width:553px){
     .card {
@@ -94,6 +134,9 @@ input, textarea{
         width: 100%;
         float: left;
         margin: 5px;
+    }
+    .form-check{
+        font-size: 22px;
     }
 }
 @media( max-width:425px){
@@ -117,6 +160,9 @@ input, textarea{
         float: left;
         margin: 5px;
     }
+    .form-check{
+        font-size: 17px;
+    }
 }
 
 @media(max-width:320px){
@@ -137,6 +183,9 @@ input, textarea{
     }
     .nav-item{
         margin-left: -4px;
+    }
+    .form-check{
+        font-size: 14px;
     }
         
 }

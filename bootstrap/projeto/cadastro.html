@@ -27,7 +27,7 @@
                         <li class="nav-item"><a class="nav-link active " href="./index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="./index.html #sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
 
                     </ul>
                 </div>
@@ -40,21 +40,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <h2>Cadastro</h2>
-                    <p>Faça seu cadastro para receber nossos produtos em sua casa.</p>
+                    <h2 class="cadastro">Cadastro</h2>
+                    <p class="p-cadastro">Faça seu cadastro para receber nossos produtos em sua casa.</p>
                 </div>
             </div>
 
             <form class="form">
                 <div class="row"><!--input de nome-->
-                    <div class="col">
+                    <div class="col-sm-12 col-md-4">
                         <label for="nome">Nome</label>
                         <div class="input-group">
                             <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" required>
                         </div>
 
                     </div>
-                    <div class="col"><!--input de email-->
+                    <div class="col-sm-12 col-md-4"><!--input de email-->
                         <label for="email">Email</label>
                         <div class="input-group">
                             <input class="form-control" id="email" type="text" name="email"
@@ -62,7 +62,7 @@
                         </div>
 
                     </div>
-                        <div class="col"><!--input telefone-->
+                        <div class="col-sm-12 col-md-4"><!--input telefone-->
                             <label for="telefone">Telefone</label>
                             <div class="input-group">
                                 <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Telefone" required>
@@ -71,28 +71,28 @@
                 </div>
 
                 <div class="row"><!--input de endereço-->
-                    <div class="col">
+                    <div class="col-sm-12 col-md-4">
                         <label for="logradouro" class="col-form-label">Logradouro</label>
                         <input type="text" id="logradouro" class="form-control" placeholder="Logradouro" required>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-4">
                         <label for="bairro" class="col-form-label">Bairro</label>
                         <input type="text" id="bairro" class="form-control" placeholder="Bairro" required>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-4">
                         <label for="complemento" class="col-form-label">Complemento</label>
                         <input type="text" id="complemento" class="form-control" placeholder="Complemento" >
                     </div>
                 </div>
 
                 <div class="row"><!--input de cidade-->
-                    <div class="col">
+                    <div class="col-sm-12 col-md-4">
                         <label for="cidade" class="col-form-label">Cidade</label>
                         <input type="text" name="cidade" id="cidade" class="form-control"
                             placeholder="Qual a sua cidade?" required>
                     </div>
 
-                    <div class="col"><!-- input de estado-->
+                    <div class="col-sm-12 col-md-4"><!-- input de estado-->
                         <label for="estado" class="col-form-label">Estado</label>
                         <select name="estado" id="estado" class="form-control" required>
                             <option value="">Selecione o estado</option>
@@ -102,7 +102,7 @@
                         </select>
                     </div>
 
-                    <div class="col"><!--input de CEP-->
+                    <div class="col-sm-12 col-md-4"><!--input de CEP-->
                         <label for="cep" class="col-form-label">CEP</label>
                         <input type="text" name="cepo" id="cep" class="form-control" placeholder="Digite seu CEP">
                     </div>
@@ -119,6 +119,7 @@
 
                     </div>
                 </div>
+                <button type="submit" class="btn btn-lg btn-secondary">Realizar cadastro</button>
 
                 <div class="row"><!--input de checkbox-->
                     <div class="col">
@@ -129,7 +130,6 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-lg btn-secondary">Realizar cadastro</button>
             </form>
             <p id="cadastre"> <a  href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1"> Cadastre-se</a> Para receber novidades  </p>
 
