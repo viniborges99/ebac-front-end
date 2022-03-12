@@ -161,20 +161,20 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
 
-                    <form class="form">
+                    <form  onSubmit="'return' ( verifica() )" class="form">
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" required>
                         </div>
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="Digite seu email">
+                            <input  onblur="checarEmail()" class="form-control" type="text" name="email" placeholder="Digite seu email"required>
                         </div>
                         <div class="input-group">
-                            <textarea class="form-control" placeholder="Alguma duvida?" name="" rows="5"></textarea>
+                            <textarea class="form-control" placeholder="Alguma duvida?" name="" rows="5" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-success">Enviar</button>
+                        <button type="submit"  class="btn btn-lg btn-success">Enviar</button>
                     </form>
 
                 </div>
@@ -409,6 +409,7 @@
             wrap: false
         })
     </script>
+    <script src="js/script.js"></script>
 
 </body>
 
