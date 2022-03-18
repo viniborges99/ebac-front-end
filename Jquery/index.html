@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/owl/css/owl.css">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="vendor/jquery-ui-1.13.1.custom/jquery-ui-1.13.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Jquery</title>
 </head>
 <body>
@@ -138,39 +139,39 @@
             </div>
         </div>
     </div>
-   <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-heading">
-                    <div class="line-dec"></div>
-                    <h1>Receba novidades</h1>
-                </div>
-            </div>
-            <div class="col-md-8 offset-md-2">
-                <div class="main-content">
-                    <p>Insira seus dados para receber novidades</p>
-                    <div class="container">
-                        <form id="subscribe" class="form" action="" method="get">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <fieldset>
-                                        <input name="email" type="text" class="form-controll" id="email" value="" placeholder="Seu email">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-5">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="button">Inscreva-se</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </form>
+    <div class="subscribe-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Receba novidades</h1>
                     </div>
                 </div>
-
+                <div class="col-md-8 offset-md-2">
+                    <div class="main-content">
+                        <p>Insira seus dados abaixo para receber informações atualizadas de nossos produtos</p>
+                        <div class="container">
+                            <form id="subscribe" class="form" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <fieldset>
+                                            <input name="email" type="text" class="form-control" id="email" value=""  placeholder="Seu e-mail..." >
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>      
--->
+    </div>
 
     <div class="footer">
         <div class="container">
@@ -183,11 +184,10 @@
                 <div class="col-md-12">
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">How It Works ?</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#sobre" class="nav-modal-open rel="sobre"> Sobre</a></li>
+                            <li><a href="#contato" rel="contato"  class="nav-modal-open">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -197,7 +197,6 @@
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -237,30 +236,59 @@
             <form action="post" class="form">
                 <div class="mb-3">
                   <label for="nome" class="form-label">Nome</label>
-                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                  <input type="text" name="nome" id="nome" onblur="validacaoEmail(email)"  class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
                   <small id="helpNome" class="text-muted">Digite um nome valido</small>
                 </div>
 
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu email" aria-describedby="helpEmail">
+                  <input type="text" name="email" onblur="checarEmail()" id="email" class="form-control" placeholder="Digite seu email" aria-describedby="helpEmail">
                   <small id="helpEmail" class="text-muted">Digite um email valido</small>
+                </div>
+
+                <div class="mb-3">
+                  <label for="date" class="form-label">Data</label>
+                  <input type="text" name="date" id="date" class="form-control" placeholder="Digite uma data valida" aria-describedby="helpdate">
+                  <small id="helpdate" class="text-muted">Digite um email valido</small>
+                </div>
+
+                <div class="mb-3">
+                  <label for="time" class="form-label">Hora</label>
+                  <input type="text" name="time" id="time" class="form-control" placeholder="Digite a hora correta" aria-describedby="helpHora">
+                  <small id="helpHora" class="text-muted">Digite a hora correta</small>
+                </div>
+                <div class="mb-3">
+                  <label for="cep" class="form-label">Cep</label>
+                  <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite um cep valido" aria-describedby="helpCep">
+                  <small id="helpCep" class="text-muted">Digite um cep valido</small>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Celular</label>
+                  <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite um celular valido" aria-describedby="helpCelular">
+                  <small id="helpCelular" class="text-muted">Digite um celular valido</small>
+                </div>
+                <div class="mb-3">
+                  <label for="cpf" class="form-label">Cpf</label>
+                  <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu cpf" aria-describedby="helpCelular" required>
+                  <small id="helpCelular" class="text-muted">Digite um cpf valido</small>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
 
-        <div id="sobre">
+        <div id="sobre" class="visually-hidden">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fugit ea aliquam commodi. Atque voluptatem hic omnis in quia, excepturi distinctio quaerat, eius corrupti, quae ex sapiente ab ratione nam!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fugit ea aliquam commodi. Atque voluptatem hic omnis in quia, excepturi distinctio quaerat, eius corrupti, quae ex sapiente ab ratione nam!</p>
 
         </div>
-        
+  
         
     <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="vendor/bootstrap/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <script src="vendor/owl/js/owl.js"></script>
+    <script src="vendor/jquery-mask/jquery.mask.min.js"></script>
+    <script src="vendor/jquery-ui-1.13.1.custom/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
     <script src="./js/custom.js"></script>
 
 </body>
