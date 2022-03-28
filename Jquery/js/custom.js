@@ -118,6 +118,7 @@ $(document). ready(function(){
 
     $('body').on('blur', '#email', function(){
         validate($(this))
+        checarEmail($(this))
     })
 
     $('body').on("focus", '#date', function(){
