@@ -16,12 +16,13 @@
     img {
         width: 100%;
         height: auto;
-        margin: $space-default auto;
+         object-fit: cover;
     }
     p {
         font-size: $font-normal;
         color: $color-01;
         padding: 2rem 0;
         width: 100%;
+    
     }
 }

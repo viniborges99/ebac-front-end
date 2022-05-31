@@ -1,0 +1,25 @@
+@media (max-width:430px){
+    .ul-card{
+        display: flex !important;
+        flex-direction: column;
+        height: auto !important;
+    }
+    .carro{
+        text-align: center;
+        color: black;
+        font-size: 30px;
+    }
+    .blocks li .img-container{
+        height: auto;
+    }
+    .blocks li{
+        width: 80%;
+    }
+
+}
+@media (max-width:350px){
+    .blocks li a{
+        font-size: 1.2em;
+    }
+    
+}
