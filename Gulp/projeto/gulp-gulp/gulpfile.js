@@ -8,6 +8,7 @@ const image = require('gulp-image')
 const stripJs = require('gulp-strip-comments')
 const stripCss = require('gulp-strip-css-comments')
 const htmlmin = require('gulp-htmlmin')
+const sass = require('gulp-sass')(require('node-sass'))
 const babel = require('gulp-babel')
 const browserSync = require('browser-sync').create()
 const reload = browserSync.reload
@@ -18,14 +19,23 @@ function tarefasCSS(cb) {
             './node_modules/bootstrap/dist/css/bootstrap.css',
             './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
             './vendor/owl/css/owl.css',
-            './vendor/jquery-ui/jquery-ui.css',
-            './src/css/style.css'
+            './vendor/jquery-ui/jquery-ui.css'
         ])
         .pipe(stripCss())                   // remove comentários css   
-        .pipe(concat('styles.css'))         // mescla arquivos
+        .pipe(concat('libs.css'))         // mescla arquivos
         .pipe(cssmin())                     // minifica css
         .pipe(rename({ suffix: '.min'}))    // styles.min.css
         .pipe(gulp.dest('./dist/css'))      // cria arquivo em novo diretório
+
+    cb()
+
+}
+
+function tarefaSASS(cb){
+    gulp.src('.src/scss/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./dist/css'))
+
 
     cb()
 
@@ -99,10 +109,11 @@ function end (cb){
 }
 
 // series x parallel
-const process = series( tarefasHTML, tarefasJS, tarefasCSS, end)
+const process = series( tarefasHTML, tarefasJS, tarefasCSS, tarefaSASS, end)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
+exports.sass = tarefaSASS
 
 exports.default = process
