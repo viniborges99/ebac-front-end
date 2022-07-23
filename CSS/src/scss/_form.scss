@@ -1,0 +1,38 @@
+
+.form label, .form input, .form textarea, .form button{
+    display: block;
+    color: $color-secondary;
+    font-size: 18px;
+    border-radius: 3px;
+    border: none;
+    font-family: $font-default;
+    width: 40%;
+    margin: auto;
+
+}
+.form label{
+    line-height: 1;
+    margin-bottom: 0.5rem;
+
+}
+.form input,.form textarea{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    resize: vertical;
+    transition: border-color, box-shadow 0.2s;
+}
+.form input:hover, .form input:focus, .form textarea:hover, .form textarea:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px $color-secondary ;
+}
+.form button{
+    background-color: $color-secondary;
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+    color: $font-color-primary;
+    text-transform: uppercase;
+    transition: 0.2s;
+
+}

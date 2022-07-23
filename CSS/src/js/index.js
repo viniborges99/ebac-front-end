@@ -2,8 +2,8 @@ import '../scss/styles.scss'
 import imageBuilding from '../assets/building.jpg'
 import imageNotebook from '../assets/notebook.jpg'//importando a imagem
 
-const elemRoot = document.getElementById('root')
-elemRoot.classList.add('container')
+//const elemRoot = document.getElementById('root')
+//elemRoot.classList.add('container')
 
 const elemImageBuilding = new Image()//estanciando a image, falando que tem uma nova img
 elemImageBuilding.src = imageBuilding// mostrando o src da img para identificar

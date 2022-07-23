@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
     <title>Framework Simulator</title>
 </head>
+
 <body>
     <div id="root">
         <header>
             <div class="container">
-                <h2>logo</h2>
-                <nav>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#contato">Contato</a>
+                <h2 class="logo"><img src="assets/images/logo-lance.png" alt="Lance negócios"></h2>
+                <nav class="nav">
+                    <a class="nav__item" href="#sobre">Sobre</a>
+                    <a class="nav__item" href="#produtos">Produtos</a>
+                    <a class="nav__item" href="#contato">Contato</a>
                 </nav>
+                <div class="hero">
+                    <h1>Veja como acelerar a criação do seu negocio</h1>
+                </div>
             </div>
         </header>
         <section id="sobre">
@@ -25,8 +33,8 @@
                 </aside>
                 <article>
                     <h1>Sobre nós</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, labore? Alias, ipsam vero suscipit ducimus corrupti aliquid esse exercitationem, quaerat quam eveniet nesciunt voluptates? Iste eum a repellat expedita sed?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aperiam quia omnis aspernatur laudantium! Molestiae illum, quibusdam dolorum quidem, porro dolor aut dignissimos magni quae aliquam tempora cupiditate praesentium iure.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, labore? Alias, ipsam vero Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, qui soluta nostrum similique accusantium delectus sit, quas quisquam repellat exercitationem nesciunt molestiae cupiditate aliquid sint? Tempore perspiciatis cumque mollitia unde.<p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aperiam quia omnis aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus saepe quaerat iusto vel explicabo, ad rem officiis nihil dolorum nostrum, expedita esse beatae recusandae eum deleniti quos. Consequatur, expedita quis?</p>
 
                 </article>
             </div>
@@ -36,60 +44,87 @@
                 <h1>Catálago</h1>
                 <div class="vitrine">
                     <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 1</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
+                        <div class="vitrine__image"><img src="assets/images/produto-logo.png" alt="Criação de logo"></div>
+                        <h3 class="vitrine_title">Logo</h3>
+                        <p class="vitrine__desc">Design profissional de logos para você  começar.</p>
+                        <a href="#produto-logo" class="vitrine__button">Tenho interesse</a>
+                    </div>
+
+                    <div class="vitrine__item">
+                        <div class="vitrine__image"><img src="assets/images/produto-timbrado.png" alt="Criação de logo"></div>
+                        <h3 class="vitrine_title">Papel timbrado</h3>
+                        <p class="vitrine__desc">Aplicação de identidade visual a seus documentos do dia a dia.</p>
+                        <a href="#produto-timbrado" class="vitrine__button">Tenho interesse</a>
                     </div>
                     <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 2</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
+                        <div class="vitrine__image"><img src="assets/images/produto-cartao.png" alt="Criação de logo"></div>
+                        <h3 class="vitrine_title">Cartão de visita</h3>
+                        <p class="vitrine__desc">Layout do seu cartão de visita com aquele toque profissional.</p>
+                        <a href="#produto-cartão" class="vitrine__button">Tenho interesse</a>
                     </div>
                     <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 3</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
+                        <div class="vitrine__image"><img src="assets/images/produto-site.png" alt="Criação de logo"></div>
+                        <h3 class="vitrine_title">Site institucional</h3>
+                        <p class="vitrine__desc">Desenvolvimento de site com a sua identidade visual aplicada.</p>
+                        <a href="#produto-site" class="vitrine__button">Tenho interesse</a>
                     </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 4</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 5</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 6</h3>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
+                    
                 </div>
             </div>
         </section>
-        <section id="contato">
+        <section id="como-funciona">
             <div class="container">
-                <h1>Contato</h1>
-                <form class="contato">
-                    <input type="text" name="" id="" placeholder="Nome">
-                    <input type="text" name="" id="" placeholder="Email">
-                    <button class="contato__button">Enviar</button>
-                </form>
+                <article>
+                    <h1>Como funciona</h1>
+                    <div class="steps">
+                        <div class="steps__item">
+                            <img src="./assets/images/escolha.png" alt="Escolha seu lance">
+                            <h3>Escolha seu lance</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/lance.png" alt="Pague o item escolhido">
+                            <h3>Lance seu pagamento</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/trabalhamos.png" alt="Trabalhamos">
+                            <h3>Após a confirmação do pagamento, iniciamos os trabalhos.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/voce-aprova.png" alt="Você aprova">
+                            <h3>Em poucos dias você recebará o trabalho pronto para avaliar.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/lancamos.png" alt="Lance seu negócio">
+                            <h3>Se estiver tudo ok para você, você lança seu negócio <span>=)</span></h3>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
+
+        <section>
+            <form class="form" action="">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required >
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required >
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Alguma duvida?"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        
         <footer>
             <div class="container">
-                <p>loja x &copy; Todos os direitos reservados.</p>
-                <small>Desenvolvido por Vinicius</small>
+                <p>&copy; Todos os direitos reservados. <br>
+                <small>Desenvolvido por Vinicius.</small></p>
             </div>
         </footer>
     </div>
+
+        
+    </div>
 </body>
+
 </html>
